@@ -1,0 +1,435 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Professional Portfolio - Academic Program Manager / QA Analyst</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        header {
+            background: rgba(255, 255, 255, 0.95);
+            padding: 60px 40px;
+            border-radius: 15px;
+            margin-bottom: 30px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+            text-align: center;
+        }
+
+        h1 {
+            font-size: 2.5em;
+            color: #667eea;
+            margin-bottom: 10px;
+        }
+
+        .subtitle {
+            font-size: 1.3em;
+            color: #764ba2;
+            margin-bottom: 20px;
+        }
+
+        .tagline {
+            color: #666;
+            font-size: 1.1em;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        .content-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+            margin-bottom: 30px;
+        }
+
+        .card {
+            background: white;
+            padding: 30px;
+            border-radius: 15px;
+            box-shadow: 0 5px 20px rgba(0, 0, 0, 0.15);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.25);
+        }
+
+        .card h2 {
+            color: #667eea;
+            margin-bottom: 20px;
+            font-size: 1.8em;
+            border-bottom: 3px solid #764ba2;
+            padding-bottom: 10px;
+        }
+
+        .card h3 {
+            color: #764ba2;
+            margin: 20px 0 10px 0;
+            font-size: 1.3em;
+        }
+
+        .card ul {
+            list-style: none;
+            padding-left: 0;
+        }
+
+        .card li {
+            padding: 8px 0;
+            position: relative;
+            padding-left: 25px;
+        }
+
+        .card li:before {
+            content: "▸";
+            color: #667eea;
+            font-weight: bold;
+            position: absolute;
+            left: 0;
+        }
+
+        .skills-container {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+            margin-top: 15px;
+        }
+
+        .skill-tag {
+            background: linear-gradient(135deg, #667eea, #764ba2);
+            color: white;
+            padding: 8px 16px;
+            border-radius: 20px;
+            font-size: 0.9em;
+            font-weight: 500;
+        }
+
+        .full-width {
+            grid-column: 1 / -1;
+        }
+
+        .contact-section {
+            background: white;
+            padding: 40px;
+            border-radius: 15px;
+            text-align: center;
+            box-shadow: 0 5px 20px rgba(0, 0, 0, 0.15);
+        }
+
+        .contact-section h2 {
+            color: #667eea;
+            margin-bottom: 20px;
+        }
+
+        .contact-info {
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+            flex-wrap: wrap;
+            margin-top: 20px;
+        }
+
+        .contact-item {
+            padding: 15px 25px;
+            background: linear-gradient(135deg, #667eea, #764ba2);
+            color: white;
+            border-radius: 10px;
+            text-decoration: none;
+            transition: opacity 0.3s ease;
+        }
+
+        .contact-item:hover {
+            opacity: 0.8;
+        }
+
+        .project-card {
+            background: linear-gradient(135deg, rgba(102, 126, 234, 0.05), rgba(118, 75, 162, 0.05));
+            padding: 20px;
+            border-radius: 10px;
+            border-left: 4px solid #667eea;
+        }
+
+        .project-type {
+            color: #764ba2;
+            font-weight: 600;
+            font-size: 0.9em;
+            margin-bottom: 10px;
+            text-transform: uppercase;
+        }
+
+        .project-card p {
+            margin-bottom: 15px;
+            color: #555;
+        }
+
+        .testimonials-section {
+            background: linear-gradient(135deg, rgba(102, 126, 234, 0.03), rgba(118, 75, 162, 0.03));
+        }
+
+        .testimonial {
+            background: white;
+            padding: 25px;
+            border-radius: 10px;
+            box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+            border-top: 3px solid #667eea;
+        }
+
+        .testimonial-text {
+            font-style: italic;
+            color: #555;
+            margin-bottom: 15px;
+            line-height: 1.7;
+        }
+
+        .testimonial-author {
+            font-weight: 600;
+            color: #667eea;
+            margin-bottom: 5px;
+        }
+
+        .testimonial-title {
+            color: #764ba2;
+            font-size: 0.9em;
+        }
+
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 2em;
+            }
+
+            .subtitle {
+                font-size: 1.1em;
+            }
+
+            .content-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Nicole Montgomery</h1>
+            <div class="subtitle">QA Analyst | Academic Program Manager</div>
+            <p class="tagline">Self-employed QA professional specializing in K-12 educational technology testing and quality assurance. Combining technical expertise with educational insight to ensure EdTech products serve students, teachers, and administrators effectively.</p>
+        </header>
+
+        <div class="content-grid">
+            <div class="card">
+                <h2>Testing Specializations</h2>
+                <h3>Platform Expertise</h3>
+                <ul>
+                    <li>Web applications (Chrome, Firefox, Safari, Edge)</li>
+                    <li>Mobile apps (iOS and Android native and hybrid)</li>
+                    <li>Desktop applications</li>
+                    <li>Cloud-based platforms</li>
+                </ul>
+                <h3>Testing Types</h3>
+                <ul>
+                    <li>Functional and UI testing</li>
+                    <li>Regression testing</li>
+                    <li>Integration and API testing</li>
+                    <li>Performance and load testing</li>
+                    <li>Security and privacy testing</li>
+                    <li>Usability and UX testing</li>
+                </ul>
+            </div>
+
+            <div class="card">
+                <h2>Academic Program Management</h2>
+                <h3>Services Offered</h3>
+                <ul>
+                    <li>K-12 curriculum alignment and development</li>
+                    <li>EdTech implementation and integration support</li>
+                    <li>Educational standards compliance (Common Core, state standards)</li>
+                    <li>Student data analysis and achievement tracking</li>
+                    <li>Teacher professional development programs</li>
+                    <li>Digital learning strategy and planning</li>
+                </ul>
+                <h3>Key Competencies</h3>
+                <div class="skills-container">
+                    <span class="skill-tag">K-12 Education</span>
+                    <span class="skill-tag">EdTech Integration</span>
+                    <span class="skill-tag">Curriculum Standards</span>
+                    <span class="skill-tag">Student Success</span>
+                    <span class="skill-tag">Data Analytics</span>
+                    <span class="skill-tag">Teacher Training</span>
+                </div>
+            </div>
+
+            <div class="card">
+                <h2>QA Analysis</h2>
+                <h3>Services Offered</h3>
+                <ul>
+                    <li>EdTech product testing and validation</li>
+                    <li>Learning Management System (LMS) QA</li>
+                    <li>Educational app and software testing</li>
+                    <li>Accessibility compliance testing (WCAG, Section 508)</li>
+                    <li>Student data privacy and security testing (FERPA, COPPA)</li>
+                    <li>User experience testing for K-12 audiences</li>
+                </ul>
+                <h3>Technical Skills</h3>
+                <div class="skills-container">
+                    <span class="skill-tag">EdTech Testing</span>
+                    <span class="skill-tag">LMS Platforms</span>
+                    <span class="skill-tag">Accessibility</span>
+                    <span class="skill-tag">FERPA/COPPA</span>
+                    <span class="skill-tag">Mobile App Testing</span>
+                    <span class="skill-tag">Selenium</span>
+                </div>
+            </div>
+
+            <div class="card full-width">
+                <h2>Professional Experience Highlights</h2>
+                <div class="content-grid" style="margin-top: 20px;">
+                    <div>
+                        <h3>EdTech Quality Assurance</h3>
+                        <ul>
+                            <li>Executed comprehensive test plans for K-12 learning platforms and applications</li>
+                            <li>Performed functional, regression, and integration testing across web and mobile</li>
+                            <li>Validated FERPA/COPPA compliance and student data privacy protections</li>
+                            <li>Conducted accessibility testing ensuring WCAG 2.1 AA compliance</li>
+                            <li>Documented and tracked defects using JIRA and bug tracking systems</li>
+                            <li>Collaborated with development teams in Agile/Scrum environments</li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h3>K-12 Educational Insight</h3>
+                        <ul>
+                            <li>Applied classroom experience to identify user experience issues for teachers and students</li>
+                            <li>Validated educational content accuracy and curriculum alignment</li>
+                            <li>Tested from diverse user perspectives (elementary, middle, high school)</li>
+                            <li>Evaluated age-appropriate design and usability for K-12 audiences</li>
+                            <li>Assessed LMS and EdTech tools for real-world classroom implementation</li>
+                            <li>Provided insights on educational standards and assessment requirements</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card">
+                <h2>Unique Value Proposition</h2>
+                <p style="margin-bottom: 15px;">As a QA Analyst with K-12 educational expertise, I provide:</p>
+                <ul>
+                    <li>Technical QA skills combined with deep understanding of educational needs</li>
+                    <li>Testing that considers both software quality AND educational effectiveness</li>
+                    <li>Ability to identify issues that only someone with classroom experience would catch</li>
+                    <li>Validation of educational content, standards alignment, and pedagogical soundness</li>
+                    <li>Effective communication with both technical teams and education stakeholders</li>
+                    <li>Comprehensive test coverage from student, teacher, and administrator perspectives</li>
+                </ul>
+            </div>
+
+            <div class="card">
+                <h2>Client Types</h2>
+                <ul>
+                    <li>K-12 EdTech companies and startups</li>
+                    <li>Learning Management System providers</li>
+                    <li>Educational app developers</li>
+                    <li>School districts and charter networks</li>
+                    <li>Digital curriculum publishers</li>
+                    <li>Assessment and testing platforms</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="card full-width">
+            <h2>Featured Projects</h2>
+            <div class="content-grid" style="margin-top: 20px;">
+                <div class="project-card">
+                    <h3>Elementary Reading App - Comprehensive QA</h3>
+                    <p class="project-type">QA Testing Project</p>
+                    <p>Led end-to-end testing for adaptive reading application serving grades K-5. Performed functional, regression, and accessibility testing across iOS and Android. Identified 150+ defects including critical issues affecting student progress tracking. Validated COPPA compliance and age-appropriate content filtering.</p>
+                    <div class="skills-container">
+                        <span class="skill-tag">Mobile Testing</span>
+                        <span class="skill-tag">Functional Testing</span>
+                        <span class="skill-tag">Accessibility</span>
+                        <span class="skill-tag">COPPA</span>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <h3>District LMS - API and Integration Testing</h3>
+                    <p class="project-type">QA Testing Project</p>
+                    <p>Executed comprehensive API testing for Learning Management System integrations with student information systems and third-party tools. Validated data synchronization, SSO authentication, and grade book integrations. Automated test suites using Postman and documented API endpoints.</p>
+                    <div class="skills-container">
+                        <span class="skill-tag">API Testing</span>
+                        <span class="skill-tag">Postman</span>
+                        <span class="skill-tag">Integration Testing</span>
+                        <span class="skill-tag">Test Automation</span>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <h3>Math Learning Platform - Regression & Performance Testing</h3>
+                    <p class="project-type">QA Testing Project</p>
+                    <p>Developed and executed regression test suites for middle school math platform using Selenium. Performed load testing to validate platform performance with 10,000+ concurrent users. Reduced regression testing time by 40% through automation while maintaining comprehensive coverage.</p>
+                    <div class="skills-container">
+                        <span class="skill-tag">Selenium</span>
+                        <span class="skill-tag">Regression Testing</span>
+                        <span class="skill-tag">Performance Testing</span>
+                        <span class="skill-tag">Test Automation</span>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <h3>Student Data Privacy - Security & Compliance Testing</h3>
+                    <p class="project-type">QA Testing Project</p>
+                    <p>Conducted security and privacy testing for EdTech platform handling sensitive student data. Validated FERPA and COPPA compliance, tested data encryption, permission controls, and audit logging. Documented vulnerabilities and verified remediation through retesting cycles.</p>
+                    <div class="skills-container">
+                        <span class="skill-tag">Security Testing</span>
+                        <span class="skill-tag">FERPA/COPPA</span>
+                        <span class="skill-tag">Compliance</span>
+                        <span class="skill-tag">Data Privacy</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="card full-width testimonials-section">
+            <h2>Client Testimonials</h2>
+            <div class="content-grid" style="margin-top: 20px;">
+                <div class="testimonial">
+                    <p class="testimonial-text">"Nicole's QA work was exceptional. She found bugs our internal team missed and her educational background meant she caught usability issues that would have frustrated teachers. Her test documentation was thorough and professional."</p>
+                    <p class="testimonial-author">Jennifer Martinez</p>
+                    <p class="testimonial-title">Product Manager, Elementary Math EdTech Startup</p>
+                </div>
+                <div class="testimonial">
+                    <p class="testimonial-text">"We hired Nicole for API testing on our LMS integrations and she exceeded expectations. Her technical skills are strong, and she communicated findings clearly to both our dev team and education partners. Would definitely work with her again."</p>
+                    <p class="testimonial-author">Robert Thompson</p>
+                    <p class="testimonial-title">Engineering Manager, Learning Platform Company</p>
+                </div>
+                <div class="testimonial">
+                    <p class="testimonial-text">"Nicole's privacy compliance testing was exactly what we needed before launching in schools. She identified vulnerabilities we hadn't considered and helped us achieve full FERPA/COPPA compliance. Highly skilled QA professional."</p>
+                    <p class="testimonial-author">Lisa Patel</p>
+                    <p class="testimonial-title">CEO, K-12 Assessment Platform</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="contact-section">
+            <h2>Let's Work Together</h2>
+            <p>Available for consulting, contract work, and collaborative projects.</p>
+            <div class="contact-info">
+                <a href="mailto:Nicole.qacareer@gmail.com" class="contact-item">📧 Nicole.qacareer@gmail.com</a>
+                <a href="https://www.linkedin.com/in/nicolemontgomery" class="contact-item">💼 LinkedIn</a>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
