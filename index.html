@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Professional Portfolio - Academic Program Manager / QA Analyst</title>
+    <title>Nicole Montgomery - QA Software Testing Analyst</title>
     <style>
         * {
             margin: 0;
@@ -15,7 +15,7 @@
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
             line-height: 1.6;
             color: #333;
-            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            background: linear-gradient(135deg, #1e3c72 0%, #2a5298 50%, #7e22ce 100%);
         }
 
         .container {
@@ -35,20 +35,27 @@
 
         h1 {
             font-size: 2.5em;
-            color: #667eea;
+            color: #1e3c72;
             margin-bottom: 10px;
         }
 
         .subtitle {
             font-size: 1.3em;
-            color: #764ba2;
+            color: #7e22ce;
             margin-bottom: 20px;
+        }
+
+        .company {
+            font-size: 1.1em;
+            color: #2a5298;
+            font-weight: 600;
+            margin-bottom: 15px;
         }
 
         .tagline {
             color: #666;
             font-size: 1.1em;
-            max-width: 800px;
+            max-width: 900px;
             margin: 0 auto;
         }
 
@@ -73,15 +80,15 @@
         }
 
         .card h2 {
-            color: #667eea;
+            color: #1e3c72;
             margin-bottom: 20px;
             font-size: 1.8em;
-            border-bottom: 3px solid #764ba2;
+            border-bottom: 3px solid #7e22ce;
             padding-bottom: 10px;
         }
 
         .card h3 {
-            color: #764ba2;
+            color: #2a5298;
             margin: 20px 0 10px 0;
             font-size: 1.3em;
         }
@@ -99,7 +106,7 @@
 
         .card li:before {
             content: "▸";
-            color: #667eea;
+            color: #1e3c72;
             font-weight: bold;
             position: absolute;
             left: 0;
@@ -113,7 +120,7 @@
         }
 
         .skill-tag {
-            background: linear-gradient(135deg, #667eea, #764ba2);
+            background: linear-gradient(135deg, #1e3c72, #7e22ce);
             color: white;
             padding: 8px 16px;
             border-radius: 20px;
@@ -134,7 +141,7 @@
         }
 
         .contact-section h2 {
-            color: #667eea;
+            color: #1e3c72;
             margin-bottom: 20px;
         }
 
@@ -148,7 +155,7 @@
 
         .contact-item {
             padding: 15px 25px;
-            background: linear-gradient(135deg, #667eea, #764ba2);
+            background: linear-gradient(135deg, #1e3c72, #7e22ce);
             color: white;
             border-radius: 10px;
             text-decoration: none;
@@ -160,14 +167,14 @@
         }
 
         .project-card {
-            background: linear-gradient(135deg, rgba(102, 126, 234, 0.05), rgba(118, 75, 162, 0.05));
+            background: linear-gradient(135deg, rgba(30, 60, 114, 0.05), rgba(126, 34, 206, 0.05));
             padding: 20px;
             border-radius: 10px;
-            border-left: 4px solid #667eea;
+            border-left: 4px solid #1e3c72;
         }
 
         .project-type {
-            color: #764ba2;
+            color: #7e22ce;
             font-weight: 600;
             font-size: 0.9em;
             margin-bottom: 10px;
@@ -179,34 +186,37 @@
             color: #555;
         }
 
-        .testimonials-section {
-            background: linear-gradient(135deg, rgba(102, 126, 234, 0.03), rgba(118, 75, 162, 0.03));
-        }
-
-        .testimonial {
-            background: white;
-            padding: 25px;
+        .stat-box {
+            background: linear-gradient(135deg, #1e3c72, #7e22ce);
+            color: white;
+            padding: 20px;
             border-radius: 10px;
-            box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
-            border-top: 3px solid #667eea;
+            text-align: center;
         }
 
-        .testimonial-text {
-            font-style: italic;
-            color: #555;
-            margin-bottom: 15px;
-            line-height: 1.7;
-        }
-
-        .testimonial-author {
-            font-weight: 600;
-            color: #667eea;
+        .stat-number {
+            font-size: 2.5em;
+            font-weight: bold;
             margin-bottom: 5px;
         }
 
-        .testimonial-title {
-            color: #764ba2;
+        .stat-label {
             font-size: 0.9em;
+            opacity: 0.9;
+        }
+
+        .highlight-box {
+            background: linear-gradient(135deg, rgba(30, 60, 114, 0.1), rgba(126, 34, 206, 0.1));
+            padding: 20px;
+            border-radius: 10px;
+            border-left: 4px solid #7e22ce;
+            margin: 20px 0;
+        }
+
+        .highlight-box h4 {
+            color: #1e3c72;
+            margin-bottom: 10px;
+            font-size: 1.1em;
         }
 
         @media (max-width: 768px) {
@@ -228,206 +238,312 @@
     <div class="container">
         <header>
             <h1>Nicole Montgomery</h1>
-            <div class="subtitle">QA Analyst | Academic Program Manager</div>
-            <p class="tagline">Self-employed QA professional specializing in K-12 educational technology testing and quality assurance. Combining technical expertise with educational insight to ensure EdTech products serve students, teachers, and administrators effectively.</p>
+            <div class="subtitle">QA Software Testing Analyst</div>
+            <div class="company">Diversociete | Remote</div>
+            <p class="tagline">QA professional specializing in ERP systems, e-commerce platforms, and EdTech solutions. Expert in NetSuite testing, API validation, and automation with proven ability to ensure data integrity, compliance, and seamless integrations across complex business systems.</p>
         </header>
 
         <div class="content-grid">
+            <div class="stat-box">
+                <div class="stat-number">5+</div>
+                <div class="stat-label">Years QA Testing Experience</div>
+            </div>
+            <div class="stat-box">
+                <div class="stat-number">ISTQB</div>
+                <div class="stat-label">Certified Tester (CTFL)</div>
+            </div>
+            <div class="stat-box">
+                <div class="stat-number">200+</div>
+                <div class="stat-label">Defects Tracked & Resolved</div>
+            </div>
+        </div>
+
+        <div class="content-grid">
             <div class="card">
-                <h2>Testing Specializations</h2>
-                <h3>Platform Expertise</h3>
+                <h2>Core Testing Expertise</h2>
+                <h3>ERP & System Testing</h3>
                 <ul>
-                    <li>Web applications (Chrome, Firefox, Safari, Edge)</li>
-                    <li>Mobile apps (iOS and Android native and hybrid)</li>
-                    <li>Desktop applications</li>
-                    <li>Cloud-based platforms</li>
+                    <li>NetSuite ERP testing (Financials, CRM, Inventory, Order Management)</li>
+                    <li>Custom SuiteScript validation and workflow testing</li>
+                    <li>Data integrity validation across modules and integrations</li>
+                    <li>System integration testing with third-party applications</li>
+                    <li>End-to-end business process testing</li>
+                    <li>Performance and load testing for ERP systems</li>
                 </ul>
-                <h3>Testing Types</h3>
+                <h3>E-commerce & Platform Testing</h3>
                 <ul>
-                    <li>Functional and UI testing</li>
-                    <li>Regression testing</li>
-                    <li>Integration and API testing</li>
-                    <li>Performance and load testing</li>
-                    <li>Security and privacy testing</li>
-                    <li>Usability and UX testing</li>
+                    <li>End-to-end checkout and payment workflow testing</li>
+                    <li>Product catalog and inventory validation</li>
+                    <li>Order processing and refund testing</li>
+                    <li>PCI compliance and payment gateway integration</li>
+                    <li>Tax and shipping calculation verification</li>
+                    <li>Cross-browser and mobile testing</li>
+                </ul>
+                <h3>Testing Methodologies</h3>
+                <ul>
+                    <li>Manual functional testing</li>
+                    <li>API and REST endpoint testing</li>
+                    <li>Regression testing suite development</li>
+                    <li>User acceptance testing (UAT) coordination</li>
+                    <li>Test automation development and maintenance</li>
+                    <li>Defect tracking and resolution management</li>
                 </ul>
             </div>
 
             <div class="card">
-                <h2>Academic Program Management</h2>
-                <h3>Services Offered</h3>
-                <ul>
-                    <li>K-12 curriculum alignment and development</li>
-                    <li>EdTech implementation and integration support</li>
-                    <li>Educational standards compliance (Common Core, state standards)</li>
-                    <li>Student data analysis and achievement tracking</li>
-                    <li>Teacher professional development programs</li>
-                    <li>Digital learning strategy and planning</li>
-                </ul>
-                <h3>Key Competencies</h3>
+                <h2>Technical Skills</h2>
+                <h3>ERP & Database</h3>
                 <div class="skills-container">
-                    <span class="skill-tag">K-12 Education</span>
-                    <span class="skill-tag">EdTech Integration</span>
-                    <span class="skill-tag">Curriculum Standards</span>
-                    <span class="skill-tag">Student Success</span>
-                    <span class="skill-tag">Data Analytics</span>
-                    <span class="skill-tag">Teacher Training</span>
+                    <span class="skill-tag">NetSuite ERP</span>
+                    <span class="skill-tag">SQL</span>
+                    <span class="skill-tag">Data Validation</span>
+                    <span class="skill-tag">SuiteScript</span>
                 </div>
-            </div>
-
-            <div class="card">
-                <h2>QA Analysis</h2>
-                <h3>Services Offered</h3>
-                <ul>
-                    <li>EdTech product testing and validation</li>
-                    <li>Learning Management System (LMS) QA</li>
-                    <li>Educational app and software testing</li>
-                    <li>Accessibility compliance testing (WCAG, Section 508)</li>
-                    <li>Student data privacy and security testing (FERPA, COPPA)</li>
-                    <li>User experience testing for K-12 audiences</li>
-                </ul>
-                <h3>Technical Skills</h3>
+                <h3>Automation & Tools</h3>
                 <div class="skills-container">
-                    <span class="skill-tag">EdTech Testing</span>
-                    <span class="skill-tag">LMS Platforms</span>
-                    <span class="skill-tag">Accessibility</span>
-                    <span class="skill-tag">FERPA/COPPA</span>
-                    <span class="skill-tag">Mobile App Testing</span>
+                    <span class="skill-tag">Katalon Studio</span>
                     <span class="skill-tag">Selenium</span>
+                    <span class="skill-tag">Playwright</span>
+                    <span class="skill-tag">Cypress</span>
+                    <span class="skill-tag">Azure DevOps</span>
+                    <span class="skill-tag">JIRA</span>
+                    <span class="skill-tag">TestRail</span>
                 </div>
-            </div>
-
-            <div class="card full-width">
-                <h2>Professional Experience Highlights</h2>
-                <div class="content-grid" style="margin-top: 20px;">
-                    <div>
-                        <h3>EdTech Quality Assurance</h3>
-                        <ul>
-                            <li>Executed comprehensive test plans for K-12 learning platforms and applications</li>
-                            <li>Performed functional, regression, and integration testing across web and mobile</li>
-                            <li>Validated FERPA/COPPA compliance and student data privacy protections</li>
-                            <li>Conducted accessibility testing ensuring WCAG 2.1 AA compliance</li>
-                            <li>Documented and tracked defects using JIRA and bug tracking systems</li>
-                            <li>Collaborated with development teams in Agile/Scrum environments</li>
-                        </ul>
-                    </div>
-                    <div>
-                        <h3>K-12 Educational Insight</h3>
-                        <ul>
-                            <li>Applied classroom experience to identify user experience issues for teachers and students</li>
-                            <li>Validated educational content accuracy and curriculum alignment</li>
-                            <li>Tested from diverse user perspectives (elementary, middle, high school)</li>
-                            <li>Evaluated age-appropriate design and usability for K-12 audiences</li>
-                            <li>Assessed LMS and EdTech tools for real-world classroom implementation</li>
-                            <li>Provided insights on educational standards and assessment requirements</li>
-                        </ul>
-                    </div>
+                <h3>API & Integration</h3>
+                <div class="skills-container">
+                    <span class="skill-tag">REST API Testing</span>
+                    <span class="skill-tag">Postman</span>
+                    <span class="skill-tag">Integration Testing</span>
+                    <span class="skill-tag">SSO Authentication</span>
                 </div>
-            </div>
-
-            <div class="card">
-                <h2>Unique Value Proposition</h2>
-                <p style="margin-bottom: 15px;">As a QA Analyst with K-12 educational expertise, I provide:</p>
-                <ul>
-                    <li>Technical QA skills combined with deep understanding of educational needs</li>
-                    <li>Testing that considers both software quality AND educational effectiveness</li>
-                    <li>Ability to identify issues that only someone with classroom experience would catch</li>
-                    <li>Validation of educational content, standards alignment, and pedagogical soundness</li>
-                    <li>Effective communication with both technical teams and education stakeholders</li>
-                    <li>Comprehensive test coverage from student, teacher, and administrator perspectives</li>
-                </ul>
-            </div>
-
-            <div class="card">
-                <h2>Client Types</h2>
-                <ul>
-                    <li>K-12 EdTech companies and startups</li>
-                    <li>Learning Management System providers</li>
-                    <li>Educational app developers</li>
-                    <li>School districts and charter networks</li>
-                    <li>Digital curriculum publishers</li>
-                    <li>Assessment and testing platforms</li>
-                </ul>
+                <h3>Methodologies & Platforms</h3>
+                <div class="skills-container">
+                    <span class="skill-tag">Agile Scrum</span>
+                    <span class="skill-tag">Test Case Design</span>
+                    <span class="skill-tag">Defect Triage</span>
+                    <span class="skill-tag">iOS/Android Testing</span>
+                </div>
             </div>
         </div>
 
         <div class="card full-width">
-            <h2>Featured Projects</h2>
+            <h2>Professional Experience Timeline</h2>
+            <div class="content-grid" style="margin-top: 20px;">
+                <div class="project-card" style="border-left: 4px solid #7e22ce;">
+                    <h3>Quality Assurance Software Testing Analyst</h3>
+                    <p class="project-type">Diversociete | Remote | November 2023 – Present</p>
+                    <ul style="margin-top: 15px;">
+                        <li>Lead manual and API testing of REST endpoints for e-commerce platform</li>
+                        <li>Conduct end-to-end testing of checkout, payment workflows, and PCI compliance</li>
+                        <li>Execute advanced SQL queries to validate data integrity and financial accuracy</li>
+                        <li>Build automated test scripts in Katalon Studio, Selenium, and Playwright</li>
+                        <li>Mentor junior QA analysts on best practices and standardize team processes</li>
+                    </ul>
+                </div>
+                <div class="project-card" style="border-left: 4px solid #2a5298;">
+                    <h3>IT Support Analyst</h3>
+                    <p class="project-type">Harbor of Hope Church | Benton Harbor, MI | September 2020 – November 2023</p>
+                    <ul style="margin-top: 15px;">
+                        <li>Authored 75+ targeted test cases and conducted regression and exploratory testing</li>
+                        <li>Logged, tracked, and triaged 200+ defects in Jira, reducing resolution time from 5 to 3 days</li>
+                        <li>Performed smoke and release readiness testing across 8+ releases with 100% stable deployments</li>
+                        <li>Collaborated with cross-functional teams to refine requirements and prevent costly rework</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="card full-width">
+            <h2>Education & Certifications</h2>
+            <div class="content-grid" style="margin-top: 20px;">
+                <div class="highlight-box">
+                    <h4>🎓 Bachelor of Science in Elementary Education</h4>
+                    <p><strong>Holy Cross College</strong> | South Bend, IN</p>
+                </div>
+                <div class="highlight-box">
+                    <h4>📜 ISTQB Certified Tester</h4>
+                    <p><strong>CTFL Foundation Level</strong> | International Software Testing Qualifications Board</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="card full-width">
+            <h2>Sample QA Work & Artifacts</h2>
+            <p style="margin-bottom: 20px; color: #666;">View examples of my QA documentation and testing artifacts demonstrating comprehensive test coverage, detailed defect reporting, and professional documentation standards.</p>
             <div class="content-grid" style="margin-top: 20px;">
                 <div class="project-card">
-                    <h3>Elementary Reading App - Comprehensive QA</h3>
-                    <p class="project-type">QA Testing Project</p>
-                    <p>Led end-to-end testing for adaptive reading application serving grades K-5. Performed functional, regression, and accessibility testing across iOS and Android. Identified 150+ defects including critical issues affecting student progress tracking. Validated COPPA compliance and age-appropriate content filtering.</p>
-                    <div class="skills-container">
-                        <span class="skill-tag">Mobile Testing</span>
-                        <span class="skill-tag">Functional Testing</span>
-                        <span class="skill-tag">Accessibility</span>
-                        <span class="skill-tag">COPPA</span>
-                    </div>
+                    <h3>📋 Test Cases - E-commerce Workflows</h3>
+                    <p>Comprehensive QA test cases covering key eCommerce workflows, including product search functionality, guest and account-based checkout, shopping cart interactions, and discount code application, ensuring accurate data validation, real-time updates, and seamless user experience.</p>
+                    <a href="https://drive.google.com/drive/folders/13zVNtQIClCYFP6PIuouvQ2vKGEV1o6l1?usp=sharing" target="_blank" style="display: inline-block; margin-top: 10px; padding: 10px 20px; background: linear-gradient(135deg, #1e3c72, #7e22ce); color: white; text-decoration: none; border-radius: 5px;">View Samples →</a>
                 </div>
                 <div class="project-card">
-                    <h3>District LMS - API and Integration Testing</h3>
-                    <p class="project-type">QA Testing Project</p>
-                    <p>Executed comprehensive API testing for Learning Management System integrations with student information systems and third-party tools. Validated data synchronization, SSO authentication, and grade book integrations. Automated test suites using Postman and documented API endpoints.</p>
+                    <h3>🐛 Bug Reports & Defect Documentation</h3>
+                    <p>Sample defect reports demonstrating clear reproduction steps, severity assessment, and detailed documentation of issues found during testing cycles.</p>
+                    <a href="https://drive.google.com/drive/folders/1EVylhuygj50ybO0S966AB1Oph8CnfX3P?usp=sharing" target="_blank" style="display: inline-block; margin-top: 10px; padding: 10px 20px; background: linear-gradient(135deg, #1e3c72, #7e22ce); color: white; text-decoration: none; border-radius: 5px;">View Samples →</a>
+                </div>
+                <div class="project-card">
+                    <h3>🔗 Traceability Report</h3>
+                    <p>Requirements traceability matrix mapping business requirements to test cases, ensuring complete test coverage and alignment with project objectives.</p>
+                    <a href="https://drive.google.com/file/d/1E6S82bmFHdPBJ5b1JODoWHnBCAr6uD-X/view?usp=sharing" target="_blank" style="display: inline-block; margin-top: 10px; padding: 10px 20px; background: linear-gradient(135deg, #1e3c72, #7e22ce); color: white; text-decoration: none; border-radius: 5px;">View Sample →</a>
+                </div>
+                <div class="project-card">
+                    <h3>📝 Test Plan - E-commerce Checkout</h3>
+                    <p>Detailed test plan outlining testing strategy, scope, approach, resources, and schedule for comprehensive e-commerce checkout validation.</p>
+                    <a href="https://docs.google.com/document/d/1sjgYvfQSCQZf7fS2FngtWVeSz6J09rU8FlFMXgoIYeQ/edit?usp=sharing" target="_blank" style="display: inline-block; margin-top: 10px; padding: 10px 20px; background: linear-gradient(135deg, #1e3c72, #7e22ce); color: white; text-decoration: none; border-radius: 5px;">View Sample →</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="card full-width">
+            <h2>Key Accomplishments & Impact</h2>
+            <div class="content-grid" style="margin-top: 20px;">
+                <div>
+                    <h3>Quality & Reliability</h3>
+                    <ul>
+                        <li>Eliminated data mismatches across systems through comprehensive API and ERP integration testing</li>
+                        <li>Ensured financial accuracy and audit compliance through advanced SQL validation of orders, refunds, and inventory records</li>
+                        <li>Validated data integrity across NetSuite modules and integrations with e-commerce platforms</li>
+                        <li>Reduced failed transactions by validating PCI compliance and payment gateway integrations</li>
+                    </ul>
+                </div>
+                <div>
+                    <h3>System Integration & Performance</h3>
+                    <ul>
+                        <li>Tested complex integrations between NetSuite ERP and e-commerce platforms ensuring seamless data flow</li>
+                        <li>Identified and resolved bottlenecks through performance and load testing of business-critical systems</li>
+                        <li>Validated custom SuiteScripts and workflows for business process automation</li>
+                        <li>Delivered comprehensive test coverage across web, mobile, and ERP platforms</li>
+                    </ul>
+                </div>
+                <div>
+                    <h3>Automation & Efficiency</h3>
+                    <ul>
+                        <li>Built automated test scripts in Katalon Studio reducing repetitive manual testing and improving test coverage efficiency</li>
+                        <li>Supported automation efforts by creating and executing regression scripts in Selenium and Playwright</li>
+                        <li>Accelerated defect detection by integrating test execution into CI/CD pipelines using Azure DevOps</li>
+                        <li>Piloted AI-enabled test prioritization models to improve execution efficiency in rapid release cycles</li>
+                    </ul>
+                </div>
+                <div>
+                    <h3>Leadership & Collaboration</h3>
+                    <ul>
+                        <li>Led UAT coordination with business stakeholders ensuring on-schedule launches with minimal post-release issues</li>
+                        <li>Mentored junior QA analysts on best practices in test case design, defect triage, and SQL validation</li>
+                        <li>Collaborated with onshore and offshore teams in Agile Scrum environments to accelerate issue resolution</li>
+                        <li>Standardized QA practices through reusable templates and comprehensive documentation</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="card full-width">
+            <h2>Featured Testing Projects</h2>
+            <div class="content-grid" style="margin-top: 20px;">
+                <div class="project-card">
+                    <h3>NetSuite ERP Integration Testing</h3>
+                    <p class="project-type">ERP & System Integration</p>
+                    <p>Led comprehensive testing of NetSuite ERP integrations with e-commerce platform, validating order processing, inventory synchronization, and financial data flow. Performed extensive API testing to ensure seamless data exchange between systems. Validated custom SuiteScripts, workflows, and business process automation. Ensured financial reporting accuracy for audit compliance and regulatory requirements.</p>
                     <div class="skills-container">
-                        <span class="skill-tag">API Testing</span>
-                        <span class="skill-tag">Postman</span>
+                        <span class="skill-tag">NetSuite</span>
+                        <span class="skill-tag">REST API</span>
                         <span class="skill-tag">Integration Testing</span>
-                        <span class="skill-tag">Test Automation</span>
+                        <span class="skill-tag">SQL Validation</span>
                     </div>
                 </div>
                 <div class="project-card">
-                    <h3>Math Learning Platform - Regression & Performance Testing</h3>
-                    <p class="project-type">QA Testing Project</p>
-                    <p>Developed and executed regression test suites for middle school math platform using Selenium. Performed load testing to validate platform performance with 10,000+ concurrent users. Reduced regression testing time by 40% through automation while maintaining comprehensive coverage.</p>
+                    <h3>E-commerce Checkout Flow Optimization</h3>
+                    <p class="project-type">End-to-End Testing</p>
+                    <p>Led comprehensive testing of checkout and payment workflows, validating PCI compliance, tax/shipping calculations, and payment gateway integrations. Identified critical issues in session handling and edge cases that reduced failed transactions and strengthened customer trust. Validated NetSuite order creation and financial data synchronization.</p>
                     <div class="skills-container">
-                        <span class="skill-tag">Selenium</span>
+                        <span class="skill-tag">E-commerce Testing</span>
+                        <span class="skill-tag">PCI Compliance</span>
+                        <span class="skill-tag">Payment Gateway</span>
+                        <span class="skill-tag">Edge Case Testing</span>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <h3>REST API Testing & Data Validation</h3>
+                    <p class="project-type">API Testing & Validation</p>
+                    <p>Executed manual and automated API testing for REST endpoints covering product listings, order creation, and inventory updates. Validated data integrity across NetSuite ERP and e-commerce systems. Ensured audit readiness and eliminated data mismatches that improved catalog reliability for customers and internal teams. Used Postman for API documentation and automation.</p>
+                    <div class="skills-container">
+                        <span class="skill-tag">REST API</span>
+                        <span class="skill-tag">Postman</span>
+                        <span class="skill-tag">Data Integrity</span>
+                        <span class="skill-tag">SQL</span>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <h3>Regression Automation Suite Development</h3>
+                    <p class="project-type">Test Automation</p>
+                    <p>Built and executed automated test scripts in Katalon Studio for critical e-commerce and ERP workflows. Expanded regression coverage for checkout, payment, inventory, and NetSuite order processing. Reduced manual execution time by 40% and ensured stable releases across multiple development cycles.</p>
+                    <div class="skills-container">
+                        <span class="skill-tag">Katalon Studio</span>
+                        <span class="skill-tag">Test Automation</span>
                         <span class="skill-tag">Regression Testing</span>
-                        <span class="skill-tag">Performance Testing</span>
-                        <span class="skill-tag">Test Automation</span>
+                        <span class="skill-tag">Script Development</span>
                     </div>
                 </div>
                 <div class="project-card">
-                    <h3>Student Data Privacy - Security & Compliance Testing</h3>
-                    <p class="project-type">QA Testing Project</p>
-                    <p>Conducted security and privacy testing for EdTech platform handling sensitive student data. Validated FERPA and COPPA compliance, tested data encryption, permission controls, and audit logging. Documented vulnerabilities and verified remediation through retesting cycles.</p>
+                    <h3>Performance Testing for Peak Traffic</h3>
+                    <p class="project-type">Load & Performance Testing</p>
+                    <p>Designed and executed performance and load testing scenarios simulating peak traffic conditions during seasonal sales events. Identified bottlenecks in checkout, search, and NetSuite integration modules. Enabled engineering teams to stabilize response times and improve system reliability under high load conditions.</p>
                     <div class="skills-container">
-                        <span class="skill-tag">Security Testing</span>
-                        <span class="skill-tag">FERPA/COPPA</span>
-                        <span class="skill-tag">Compliance</span>
-                        <span class="skill-tag">Data Privacy</span>
+                        <span class="skill-tag">Performance Testing</span>
+                        <span class="skill-tag">Load Testing</span>
+                        <span class="skill-tag">Bottleneck Analysis</span>
+                        <span class="skill-tag">System Optimization</span>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <h3>CI/CD Pipeline Integration</h3>
+                    <p class="project-type">DevOps & Automation</p>
+                    <p>Integrated test execution into CI/CD pipelines using Azure DevOps, collaborating with development teams to monitor builds and validate deployments. Enabled earlier defect detection in the release cycle, reducing post-deployment issues and accelerating delivery timelines for both e-commerce and ERP updates.</p>
+                    <div class="skills-container">
+                        <span class="skill-tag">Azure DevOps</span>
+                        <span class="skill-tag">CI/CD</span>
+                        <span class="skill-tag">Build Monitoring</span>
+                        <span class="skill-tag">Deployment Validation</span>
                     </div>
                 </div>
             </div>
         </div>
 
-        <div class="card full-width testimonials-section">
-            <h2>Client Testimonials</h2>
+        <div class="card full-width">
+            <h2>EdTech & Educational Background</h2>
+            <div class="highlight-box">
+                <h4>K-12 Educational Technology Experience</h4>
+                <p>Additional expertise in K-12 EdTech quality assurance, including LMS testing, FERPA/COPPA compliance, accessibility validation (WCAG 2.1), and age-appropriate UX testing. Combines technical QA skills with deep understanding of educational standards, curriculum alignment, and classroom implementation needs.</p>
+            </div>
             <div class="content-grid" style="margin-top: 20px;">
-                <div class="testimonial">
-                    <p class="testimonial-text">"Nicole's QA work was exceptional. She found bugs our internal team missed and her educational background meant she caught usability issues that would have frustrated teachers. Her test documentation was thorough and professional."</p>
-                    <p class="testimonial-author">Jennifer Martinez</p>
-                    <p class="testimonial-title">Product Manager, Elementary Math EdTech Startup</p>
+                <div>
+                    <h3>EdTech Testing Capabilities</h3>
+                    <ul>
+                        <li>Learning Management System (LMS) testing and validation</li>
+                        <li>Student data privacy compliance (FERPA/COPPA)</li>
+                        <li>Accessibility testing for diverse learner needs</li>
+                        <li>Educational content accuracy verification</li>
+                        <li>API testing for student information systems</li>
+                    </ul>
                 </div>
-                <div class="testimonial">
-                    <p class="testimonial-text">"We hired Nicole for API testing on our LMS integrations and she exceeded expectations. Her technical skills are strong, and she communicated findings clearly to both our dev team and education partners. Would definitely work with her again."</p>
-                    <p class="testimonial-author">Robert Thompson</p>
-                    <p class="testimonial-title">Engineering Manager, Learning Platform Company</p>
-                </div>
-                <div class="testimonial">
-                    <p class="testimonial-text">"Nicole's privacy compliance testing was exactly what we needed before launching in schools. She identified vulnerabilities we hadn't considered and helped us achieve full FERPA/COPPA compliance. Highly skilled QA professional."</p>
-                    <p class="testimonial-author">Lisa Patel</p>
-                    <p class="testimonial-title">CEO, K-12 Assessment Platform</p>
+                <div>
+                    <h3>Educational Insight Value</h3>
+                    <ul>
+                        <li>Understanding of educational standards and curriculum alignment</li>
+                        <li>Experience with K-12 classroom technology implementation</li>
+                        <li>Ability to test from educator and student perspectives</li>
+                        <li>Knowledge of age-appropriate design for K-12 audiences</li>
+                        <li>Effective communication with education stakeholders</li>
+                    </ul>
                 </div>
             </div>
         </div>
 
         <div class="contact-section">
-            <h2>Let's Work Together</h2>
-            <p>Available for consulting, contract work, and collaborative projects.</p>
+            <h2>Let's Connect</h2>
+            <p>Available for full-time opportunities in QA testing, specializing in ERP systems and EdTech.</p>
             <div class="contact-info">
                 <a href="mailto:Nicole.qacareer@gmail.com" class="contact-item">📧 Nicole.qacareer@gmail.com</a>
-                <a href="https://www.linkedin.com/in/nicolemontgomery" class="contact-item">💼 LinkedIn</a>
+                <a href="https://www.linkedin.com/in/nicolemontgomeryqa" class="contact-item">💼 LinkedIn</a>
             </div>
         </div>
     </div>
